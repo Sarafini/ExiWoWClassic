@@ -1,0 +1,177 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" 
+				   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+				   xsi:schemaLocation="http://www.blizzard.com/wow/ui/ 
+				   ..\..\FrameXML\UI.xsd">
+
+	<Frame name="ExiWoWSettingsFrame"
+		toplevel="true"
+		frameStrata="DIALOG"
+		movable="true"
+		enableMouse="true"
+		hidden="false"
+		parent="UIParent">
+		<Size>
+			<AbsDimension x="480" y="325"/>
+		</Size>
+		<Anchors>
+			<Anchor point="CENTER">
+				<Offset><AbsDimension x="-200" y="200"/></Offset>
+			</Anchor>
+		</Anchors>
+		<Backdrop
+			bgFile="Interface\DialogFrame\UI-DialogBox-Background"
+			edgeFile="Interface\DialogFrame\UI-DialogBox-Border"
+			tile="true">
+			<BackgroundInsets>
+				<AbsInset left="11" right="12" top="12" bottom="11"/>
+			</BackgroundInsets>
+			<TileSize>
+				<AbsValue val="32"/>
+			</TileSize>
+			<EdgeSize>
+				<AbsValue val="32"/>
+			</EdgeSize>
+		</Backdrop>
+	   
+		<Layers>
+			<Layer level="ARTWORK">
+				<Texture name="$parent_frame_header" file="Interface\DialogFrame\UI-DialogBox-Header">
+					<Size>
+						<AbsDimension x="356" y="64"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOP">
+							<Offset>
+								<AbsDimension x="0" y="12"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+				<FontString inherits="GameFontNormal" text="ExiWoW">
+					<Anchors>
+						<Anchor point="TOP" relativeTo="$parent_frame_header">
+							<Offset>
+								<AbsDimension x="0" y="-14"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+	   	</Layers>
+
+	   	<Frames>
+
+			<Button name="$parent_close" inherits="UIPanelCloseButton" text="Test">
+				<Size x="50" y="50" />
+				<Anchors>
+					<Anchor point="TOPRIGHT">
+						<AbsDimension x="15" y="15" />
+					</Anchor>
+				</Anchors>
+			</Button>
+
+	   		<!-- ACTIONS page -->
+			<Frame name="$parent_page_actions" hidden="false">
+				<Anchors>
+					<Anchor point="TOPLEFT"/>
+					<Anchor point="BOTTOMRIGHT"/>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString inherits="GameFontNormalLarge" text="1/1">
+							<Anchors>
+								<Anchor point="BOTTOM" relativeTo="$parent">
+									<Offset>
+										<AbsDimension x="0" y="20"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+			</Frame>   
+
+			<!-- Quests page -->
+			<Frame name="$parent_page_quests" hidden="true">
+				<Anchors>
+					<Anchor point="TOPLEFT"/>
+					<Anchor point="BOTTOMRIGHT"/>
+				</Anchors>
+			</Frame>   
+
+
+			<!-- Underwear page -->
+			<Frame name="$parent_page_underwear" hidden="true">
+			   <Anchors>
+				   <Anchor point="TOPLEFT"/>
+				   <Anchor point="BOTTOMRIGHT"/>
+			   </Anchors>
+			   <Layers>
+					<Layer level="ARTWORK">
+						<FontString inherits="GameFontNormalLarge" text="1/1">
+							<Anchors>
+								<Anchor point="BOTTOM" relativeTo="$parent">
+									<Offset>
+										<AbsDimension x="0" y="20"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+		   	</Frame>
+
+			<!-- Settings page -->
+			<Frame name="$parent_page_settings" hidden="true">
+				<Anchors>
+					<Anchor point="TOPLEFT"/>
+					<Anchor point="BOTTOMRIGHT"/>
+				</Anchors>
+			</Frame>
+
+			
+
+			
+
+		   <Button name="$parentTab1" inherits="CharacterFrameTabButtonTemplate" id="1" text="Actions">
+			   <Anchors>
+				   <Anchor point="CENTER" relativePoint="BOTTOMLEFT">
+					   <Offset>
+						   <AbsDimension x="60" y="-10"/>
+					   </Offset>
+				   </Anchor>
+			   </Anchors>
+		   </Button>
+		   <Button name="$parentTab2" inherits="CharacterFrameTabButtonTemplate" id="2" text="Quests">
+			   <Anchors>
+				   <Anchor point="LEFT" relativeTo="$parentTab1" relativePoint="RIGHT">
+					   <Offset>
+						   <AbsDimension x="-16" y="0"/>
+					   </Offset>
+				   </Anchor>
+			   </Anchors>
+		   </Button>
+		   <Button name="$parentTab3" inherits="CharacterFrameTabButtonTemplate" id="3" text="Underwear">
+			   <Anchors>
+				   <Anchor point="LEFT" relativeTo="$parentTab2" relativePoint="RIGHT">
+					   <Offset>
+						   <AbsDimension x="-16" y="0"/>
+					   </Offset>
+				   </Anchor>
+			   </Anchors>
+		   </Button>
+		   <Button name="$parentTab4" inherits="CharacterFrameTabButtonTemplate" id="4" text="Character">
+			   <Anchors>
+				   <Anchor point="LEFT" relativeTo="$parentTab3" relativePoint="RIGHT">
+					   <Offset>
+						   <AbsDimension x="-16" y="0"/>
+					   </Offset>
+				   </Anchor>
+			   </Anchors>
+		   </Button>
+
+	   </Frames>
+	   
+   </Frame>
+</Ui>
+

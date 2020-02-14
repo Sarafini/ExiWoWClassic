@@ -1,0 +1,61 @@
+## Interface: 11303
+## Title: ExiWoWClassic
+## Notes: Improving your RP by adding RP actions and more detailed descriptions of your character!
+## Version: 0.0.1
+
+## SavedVariables: globalStorage
+## SavedVariablesPerCharacter: localStorage
+
+# XML templates 
+xml/panel.xml
+
+# Module loader and tools
+Module.lua
+Tools.lua
+Database.lua
+
+
+# Entry point
+_index.lua
+# IO
+Gateway.lua
+
+# External Libraries
+ext/json.lua
+ext/easing.lua
+
+# Main classes
+classes/Func.lua
+classes/Condition.lua
+classes/NPC.lua
+classes/Spell.lua
+classes/Action.lua
+classes/Character.lua
+classes/UI.lua
+classes/RPText.lua
+classes/Extension.lua
+classes/Underwear.lua
+classes/Event.lua
+classes/Effect.lua
+classes/Timer.lua
+classes/Callback.lua
+classes/Zone.lua
+classes/Loot.lua
+classes/Quest.lua
+classes/Talkbox.lua
+classes/Visual.lua
+
+# Asset database
+db/functions.lua
+db/conditions.lua
+db/zones.lua
+db/spells.lua
+db/npcs.lua
+db/effects.lua
+db/rptexts.lua
+db/actions.lua
+db/underwear.lua
+db/loot.lua
+db/quests.lua
+db/visuals.lua
+

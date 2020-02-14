@@ -1,0 +1,68 @@
+The Slithering Thong Quest
+	- Script the reward
+
+Screen effects:
+	- Blindness
+	- Camera
+
+- Forage rare item nearby indicator
+
+
+Class specific actions:
+Shaman:
+	Aimed Riptide: Passive: Riptide has a 25% chance to hit your target's breasts, groin, or butt.
+	Nipple Shocker: Shocks your target's nipples.
+
+Paladin:
+	Chastise: Clear your target's arousal.
+
+Rogue:
+	Pickpocket: Slip your hands into your target's leggings and fondle their "goods". Must be stealthed and behind your target.
+	Aphrodisiac: Slips aphrodisiac into your target's food and drink. If they eat or drink within an hour, they get poisoned increasing arousal generated.
+	Aimed Hook: Grapples your target's underwear with your grappling hook. Has a 20% chance to take them off.
+
+Warrior:
+	Flex: Flex your muscles, making nearby party members look at you.
+
+DH:
+	
+
+DK:
+
+
+Druid:
+
+
+Warlock:
+
+
+Mage:
+
+
+Hunter:
+
+
+
+
+Race specific:
+Gnome:
+	- Vibrate Setting: Vibrates your target
+
+
+- Add pagination once you manage to fill up the whole first page and/or underwear page
+- Character backup
+
+
+
+Ideas for stuff you can do with the API:
+	- Dismount a player
+	- Toggle sheathe
+	- Zoom in/out CameraZoomIn(increment)
+	- MoveViewRightStart() 
+	- Block hearing: UI ChatFrame:AddMessageEventFilter("event", filterFunc)
+	- Auto follow
+	- Blindness via UI element
+	- Audio mute
+	- Gamma
+	- 
+
